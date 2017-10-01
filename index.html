@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/tcal.css" type="text/css">
 	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 	<link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
 
 </head>
@@ -22,24 +23,56 @@
 	
 	<header>
 		<div class="container">
-			<div class="col-lg-1 logo"></div>
-			<div class="col-lg-2 right phone"></div>
-			<div class="col-lg-3 right greetings">
+			<div class="logo"></div>
+			<div class="greetings">
 				<div class="photo-wrap"></div>
 				<div class="greetings-wrap">
-					<p class="text"></p>
-					<span class="name"></span>
+					<p class="text">Здравствуйте, 
+					<span class="name">Данила Багров</span></p>
 				</div>
+			</div>
+			<div class="phone">
+				<div class="phone-icon"></div>
+				<span class="phone-number"><a href="tel:+74955278684">8 (495) 527 86 84</a></span>
 			</div>
 		</div>
 		<div class="container-fluid">
 			<div class="container">
 				<div class="nav">
-					<ul class="row">
+					<ul>
 						<li><a href="#">о проекте</a></li>
-						<li><a href="#">производителю</a></li>
-						<li><a href="#">розничным точкам</a></li>
-						<li><a href="#">покупателям</a></li>
+						<li>
+							<a href="#">производителю<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								<ul>
+									<li><a href="#">О платформе</a></li>
+									<li><a href="#">Маркетинг</a></li>
+									<li><a href="#">Продажи</a></li>
+									<li><a href="#">Финансы</a></li>
+									<li><a href="#">Клиенты</a></li>
+									<li id="cover"><i class="fa fa-angle-down" aria-hidden="true"></i></li>
+								</ul>
+						</li>
+						<li><a href="#">розничным точкам<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul>
+								<li><a href="#">hsdvbis</a></li>
+								<li><a href="#">kjfano</a></li>
+								<li><a href="#">alkfao</a></li>
+								<li><a href="#">jdngaouregpa</a></li>
+								<li><a href="#">alodnaoirna</a></li>
+								<li id="cover"><i class="fa fa-angle-down" aria-hidden="true"></i></li>
+							</ul>
+						</li>
+						<li><a href="#">покупателям<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul>
+								<li><a href="#">apfopie1</a></li>
+								<li><a href="#">:moaibb</a></li>
+								<li><a href="#">KJNisovn</a></li>
+								<li><a href="#">[OIPNVpbd</a></li>
+								<li><a href="#">pdirbpaib</a></li>
+								<li id="cover"><i class="fa fa-angle-down" aria-hidden="true"></i></li>s
+							</ul>
+
+						</li>
 						<li><a href="#">новости</a></li>
 						<li><a href="#">мероприятиям</a></li>
 						<li><a href="#">медиа</a></li>
@@ -52,48 +85,50 @@
 	<section class="content">
 		<div class="content-header">
 			<div class="container">
-				<div class="navigation-links"></div>
+				<div class="navigation-links">
+					<span><a href="#">Wellmark </a></span><a href="#">/ Личный кабинет</a>
+				</div>
 				<div class="row">
-					<div class="col-lg-3 page-name"></div>
-					<div class="col-lg-6 company-name"></div>
-					<div class="col-lg-3 balance">
-						<div class="balance__text"></div>
-						<div class="balance__count"></div>
+					<div class="page-name">личный кабинет</div>
+					<div class="company-name">ООО "Самая лучшая"</div>
+					<div class="balance">
+						<div class="balance__text">Баланс:</div>
+						<div class="balance__count">100 000 $</div>
 					</div>					
 				</div>
 			</div>
 		</div>
 		<div class="divider"></div>
 		<div class="container">
-			<div class="col-lg-3 left-sidebar">
-				<div class="overview">
+			<div class="left-sidebar col-md-3  col-sm-3  col-xs-3">
+				<div class="overview left-sidebar-head"><span></span>Обзор<i class="fa fa-angle-down" aria-hidden="true"></i>
 					<a href="#">показатели</a>
 					<a href="#">продажи</a>
 					<a href="#">средний чек</a>
 					<a href="#">глубина чека</a>
 				</div>
-				<div class="action">
+				<div class="action left-sidebar-head"><span></span>Акции<i class="fa fa-angle-down" aria-hidden="true"></i>
 					<a href="#">создать</a>
 					<a href="#">охват</a>
 					<a href="#">привлечение</a>
 					<a href="#">конверсия</a>
 					<a href="#">проникновение</a>
 				</div>
-				<div class="bonuses">
+				<div class="bonuses left-sidebar-head"><span></span>финансовые бонусы<i class="fa fa-angle-down" aria-hidden="true"></i>
 					<a href="#">текущие</a>
 					<a href="#">закрытые</a>
 					<a href="#">документы</a>
 				</div>
-				<div class="settings">
+				<div class="settings left-sidebar-head"><span></span>настройки<i class="fa fa-angle-down" aria-hidden="true"></i>
 					<a href="#">кассы</a>
 					<a href="#">чеки</a>
 					<a href="#">пользователи</a>
 					<a href="#">реквизиты</a>
 				</div>
-				<div class="support">
+				<div class="support left-sidebar-head"><span></span>поддержка
 				</div>
 			</div>
-			<div class="col-lg-9 content__main">
+			<div class="content__main col-md-9  col-sm-9  col-xs-9">
 				<div class="content__main__block acion-part">
 					<div class="head">
 						<span>акция</span>
@@ -101,34 +136,34 @@
 					</div>
 					<form action="#" id="action">
 						<div class="row">
-							<div class="col-lg-2 subhead">название акции</div>
-							<div class="col-lg-8">
-								<input type="text" name="action-name"><br>
-								<input type="radio" name="action-type" value="discount">Скидка
-								<input type="radio" name="action-type" value="cashback">Cashback
+							<div class="col-lg-3 subhead">Название акции</div>
+							<div class="col-lg-8  forms">
+								<input type="text" name="action-name" class="action-name"><br>
+								<input type="radio" name="action-type" id='discount' value="discount"><label for="discount">Скидка</label>
+								<input type="radio" name="action-type" id="cashback" value="cashback"><label for="cashback" class="cashback">Cashback</label>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-2 subhead">размер</div>
-							<div class="col-lg-8">
-								<input type="text" name="action-amount"  placeholder=" Ставка"> % 
-								<input type="text" name="action-bonus" placeholder=" Бонус"> рублей
+							<div class="col-lg-3 subhead">Размер:</div>
+							<div class="col-lg-8 forms">
+								<input type="text" name="action-amount"  class="size" placeholder=" Ставка">% 
+								<input type="text" name="action-bonus" class="size" placeholder=" Бонус">рублей
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-2 subhead">описание 
+							<div class="col-lg-3 subhead">Описание: 
 								<span class="subhead-description">2 000 символов</span>
 							</div>
-							<div class="col-lg-8">
-								<textarea type="text" name="action-subhead-discription" maxlength="2000"></textarea>
+							<div class="col-lg-8 forms">
+								<textarea type="text" name="action-subhead-discription" maxlength="2000" class="textarea"></textarea>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-2 subhead">описание 
+							<div class="col-lg-3 subhead">Описание: 
 								<span class="subhead-description">70 символов <br>для Twitter</span>
 							</div>
-							<div class="col-lg-8">
-								<textarea type="text" name="action-subhead-discription-twitter" maxlength="70"></textarea>
+							<div class="col-lg-8 forms">
+								<textarea type="text" name="action-subhead-discription-twitter" maxlength="70" class="textarea"></textarea>
 							</div>
 						</div>
 				</div>
@@ -138,8 +173,8 @@
 						<button class="accord"></button>
 					</div>
 							<div class="row">
-								<div class="col-lg-2 subhead">период с</div>
-								<div class="col-lg-8">
+								<div class="col-lg-3 subhead">период с</div>
+								<div class="col-lg-8 forms">
 									<input type="text" name="date" class="tcal" value="">
 									 по <input type="text" name="date" class="tcal" value="">
 								</div>	
@@ -149,7 +184,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-2 subhead">дни недели:</div>
+								<div class="col-lg-3 subhead">дни недели:</div>
 								<div class="col-lg-8 week">
 									<input type="checkbox" id="week"><label for="week">Вся неделя</label>
 									<input type="checkbox" id="monday"><label for="monday">Пн</label>
@@ -160,13 +195,13 @@
 									<input type="checkbox" id="saturday"><label for="saturday">Сб</label>
 									<input type="checkbox" id="sunday"><label for="sunday">Вс</label>
 								</div>	
-								<div class="col-lg-2">
+								<div class="col-lg-3">
 									<div class="circle"></div>
 									<div class="percent">50 %</div>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-2 subhead">время с</div>
+								<div class="col-lg-3 subhead">время с</div>
 								<div class="col-lg-8">
 									<input type="time" name="time" class="time" value="">
 									 по <input type="time" name="time" class="time" value="">
@@ -177,7 +212,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-2 subhead">география</div>
+								<div class="col-lg-3 subhead">география</div>
 								<div class="col-lg-8 geography">
 									<div class="btn-group dropdown">
 										<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">+ Добавить</button>
@@ -205,7 +240,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-2 subhead">магазины</div>
+								<div class="col-lg-3 subhead">магазины</div>
 								<div class="col-lg-8 shop">
 									<div class="btn-group dropdown">
 										<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">+ Добавить</span></button>
@@ -233,7 +268,7 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-2 subhead">Сумма чека:</div>
+								<div class="col-lg-3 subhead">Сумма чека:</div>
 								<div class="col-lg-8">
 									<div class="symbol"></div>
 									<input type="text" id="check-amount" readonly placeholder=" пусто...">

@@ -4,9 +4,546 @@
 	margin: 0;
 }
 
+body {
+	font-family: 'Geometria', sans-serif;
+}
+
+header {
+	width: 100%;
+}
+
+header .container {
+	width: 90%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+header .logo {
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	float: left;
+	width: 115px;
+	height: 60px;
+	background-image: url(../img/logo-wellmark-106x36.png);
+	background-attachment: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+header .phone {
+	display: flex;
+	align-items: center;
+	height: 60px;
+	width: 210px;
+	float: right;
+}
+
+.phone-icon {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/phone-icon.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.phone-number {
+	display: inline-block;
+	font-family: Geometria, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-left: 10px;
+}
+.phone-number a {
+	color: #37323f;
+	text-decoration: none;
+}
+
+header .greetings {
+	display: flex;
+	align-items: center;
+	height: 60px;
+	float: right;
+}
+
+.photo-wrap {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: url(../img/avatar.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment:cover;
+	margin-right: 10px;
+}
+
+.greetings-wrap {
+	float: right;
+	text-align: right;
+}
+
+.greetings-wrap .text {
+	font-size: 14px;
+	font-family: Geometria, sans-serif;
+	font-weight: 300;
+	text-align: right;
+}
+
+.greetings-wrap .name {
+	font-weight: 700;
+}
+
+.greetings-wrap p {
+	margin-bottom: 0;
+	float: right;
+}
+
+header .container-fluid {
+	width: 100%;
+	height: 50px;
+	background-color: #37323f;
+}
+
+header .nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .nav ul li {
+	list-style-type: none;
+	position: relative;
+	transition: all 0.3s linear;
+}
+
+header .nav ul li a {
+	font-family: Geometria, sans-serif;
+	font-size: 14px;
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	height: 50px;
+	font-weight: 300;
+	line-height: 50px;
+}
+
+header .nav ul li a:hover {
+	color:#f1cf65;
+}
+
+header .nav ul li a:hover i{
+	color:#f1cf65;
+}
+
+header .nav ul li a i {
+	margin-left: 20px;
+	font-size: 14px;
+	color:#fff;
+}
+
+header .nav ul li:hover ul {
+	display: block;
+}
+
+header .nav ul li>ul {
+	display: none;
+	position: absolute;
+	top: 50px;
+	right: -10px;
+	width: 180px;
+	height: auto;
+	background-color: #433e4a;
+	z-index: 1;
+}
+
+header .nav ul li>ul li {
+	height: 35px;
+}
+
+header .nav ul li>ul li a{
+	font-size: 12px;
+	text-transform: capitalize;
+	padding: 5px 20px;
+	line-height: 35px
+}
+
+header .nav ul li>ul li:hover {
+	background-color: #37323f;
+	color:#f1cf65;
+}
+
+#cover {
+	position: absolute;
+	top: -35px;
+	right: 0;
+	width: 35px;
+	height: 35px;
+	background-color: #433e4a;
+	color: #f1cf65;
+	text-align: center;
+	line-height: 17px;
+}
+
+.navigation-links {
+	display: block;
+	float: left;
+}
+
+.content {
+	width: 100%;
+}
+
+.content-header {
+	width: 100%;
+}
+
+.container {
+	width: 90%;
+	max-width: 1280px;
+	margin:0 auto;
+}
+
+.navigation-links {
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.navigation-links span>a {
+	font-family: Geometria, sans-serif;
+	font-size: 12px;
+	color:#f1cf65;
+	text-decoration: none;
+}
+
+.navigation-links a {
+	font-family: Geometria, sans-serif;
+	font-size: 12px;
+	color:#b6b4b9;
+	text-decoration: none;
+}
+
+.content-header>.container>.row {
+	margin-top: 20px;
+	padding: 0 10px;
+}
+
+.page-name {
+	display: inline-block;
+	text-align: center;
+	width: 200px;
+	font-family: Geometria, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height:60px;
+	border-bottom: 2px solid #b6b4b9;
+}
+
+.company-name {
+	display: inline-block;
+	font-family: Geometria, sans-serif;
+	font-size: 18px;
+	line-height:60px;
+	margin-left: 25%;
+}
+
+.balance {
+	display: inline-block;
+	float: right;
+}
+
+.balance__text {
+	display: inline-block;
+	color: #f1cf65;
+	text-decoration:underline dotted;
+	font-family: Geometria, sans-serif;
+	line-height:60px;
+	font-size: 14px;
+}
+
+.balance__text:before {
+	content: "";
+	width: 17px;
+	height: 17px;
+	background-image: url(../img/balance-icon.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin:10px 10px -5px 0;
+}
+
+.balance__count {
+	display: inline-block;
+	font-family: Geometria, sans-serif;
+	line-height:60px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
 .divider {
 	width: 100%;
 	height: 3px;
 	background-color: #ccc;
 }
 
+.left-sidebar {
+	width: 285px;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.left-sidebar-head {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: Geometria, sans-serif;
+	color:#1d1d1d;
+	padding: 10px 0;
+	box-sizing: border-box;
+	border-bottom: 1px solid #ccc;
+}
+.left-sidebar-head:last-child {
+	border-bottom: none;
+}
+
+.left-sidebar-head:hover {
+	color:#f1cf65;
+}
+
+.left-sidebar-head i {
+	float: right;
+	font-size: 20px;
+}
+
+.overview span {
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+	background-image: url(../img/eye-icon-grey.png);
+	background-attachment: cover;
+	background-repeat: no-repeat;
+	margin-bottom: -5px;
+	margin-right: 5px;
+}
+.overview:hover span {
+	background-image: url(../img/eye-icon.png);
+}
+
+.action span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/action-icon.png);
+	background-attachment: cover;
+	background-repeat: no-repeat;
+	margin-bottom: -14px;
+	margin-right: 5px;
+}
+.action:hover span {
+	background-image: url(../img/action-icon-hover.png);
+}
+
+.bonuses span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/coins-icon.png);
+	background-attachment: cover;
+	background-repeat: no-repeat;
+	margin-bottom: -14px;
+	margin-right: 5px;
+}
+.bonuses:hover span {
+	background-image: url(../img/coins-icon-hover.png);
+}
+
+.settings span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/settings-icon.png);
+	background-attachment: cover;
+	background-repeat: no-repeat;
+	margin-bottom: -14px;
+	margin-right: 5px;
+}
+.settings:hover span {
+	background-image: url(../img/settings-icon-hover.png);
+}
+
+.support span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/support-icon.png);
+	background-attachment: cover;
+	background-repeat: no-repeat;
+	margin-bottom: -14px;
+	margin-right: 5px;
+}
+.support:hover span {
+	background-image: url(../img/support-icon-hover.png);
+}
+
+.left-sidebar-head a {
+	text-transform: capitalize;
+	display: block;
+	text-decoration: none;
+	color:#1d1d1d;
+	text-indent: 50px;
+	font-size:14px;
+	letter-spacing: 1.1px;
+	padding: 5px 0;
+}
+
+.left-sidebar-head a:hover {
+	color:#f1cf65;
+}
+
+
+.content__main {
+	display: inline-block;
+	float: right;
+	padding-right: 0;
+}
+
+.content__main__block {
+	width: 100%;
+	padding: 30px 0 10px 10px;
+	box-sizing: border-box;
+}
+
+.content__main__block .head {
+	width: 100%;
+	height: 45px;
+	background-color:#f1cf65;
+	font-size: 18px;
+	font-family: Geometria, sans-serif;
+	text-transform: uppercase;
+	line-height: 45px;
+	text-indent: 20px;
+	color:#fff;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.content__main__block .head:before {
+	content:'';
+	display: block;
+	position: absolute;
+	width: 12px;
+	height: 15px;
+	top: 50%;
+	margin-top: -7.5px;
+	left: -6px;
+	background-color: #fff;
+}
+
+.content__main__block .head:after {
+	content:'';
+	display: block;
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	right: 12px;
+	top: 12px;
+	background-image: url(../img/minus-after.png);
+	background-repeat: no-repeat;
+	background-attachment:cover;
+	background-size: 100%;
+}
+
+#action .subhead {
+	font-family: Geometria, sans-serif;
+	font-size: 16px;
+	text-align: right;
+}
+
+.subhead-description {
+	color:#ccc;
+	display: block;
+}
+
+#action .forms .action-name {
+	width: 90%;
+	height: 30px;
+	margin-bottom: 15px;
+}
+
+#action .forms input[type='radio'] {
+	display: none;
+}
+#action .forms label {
+	font-weight: 300;
+	font-family: Geometria, sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	margin-bottom: 35px;
+}
+#action .forms label:before {
+	content:'';
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border:1px solid #ccc;
+	border-radius: 50%;
+	margin-right: 10px;
+	margin-bottom: -2px;
+	cursor: pointer;
+}
+
+#action .forms .cashback {
+	margin-left: 40px;
+}
+
+#action .forms input[type="radio"]:checked+label:before{
+    background-image: url(../img/input-checked.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:cover;
+}
+
+#action .forms .size {
+	width: 32%;
+	height: 30px;
+	margin-right: 15px;
+	margin-bottom: 40px;
+}
+
+#action .forms .size:last-child {
+	margin-left: 50px;
+}
+
+#action .forms .textarea {
+	width: 90%;
+	height: 80px;
+	overflow-y: scroll;
+	resize: none;
+	outline: none;
+}
+#action .forms .textarea::-webkit-scrollbar-button {
+	display: none;
+}
+#action .forms .textarea::-webkit-scrollbar {
+	width: 4px;
+	border-right: solid 2px #fff;
+}
+#action .forms .textarea::-webkit-scrollbar-thumb {
+	background-color: #a8191d;
+	width: 4px;
+}
+#action .forms .textarea::-webkit-scrollbar-track-piece {
+	width: 1px;
+	border-right: 2px solid #fff;
+	border-left: 1px solid #ccc;
+}
+#action .forms .textarea::-webkit-scrollbar-corner {
+	display: none;
+}
