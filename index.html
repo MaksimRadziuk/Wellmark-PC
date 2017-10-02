@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	
-	<link rel="stylesheet" href="css/timepicker-ui.min.css" type="text/css">
 	<link rel="stylesheet" href="css/tcal.css" type="text/css">
 	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 	<link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
@@ -38,9 +37,10 @@
 		</div>
 		<div class="container-fluid">
 			<div class="container">
-				<div class="nav">
+				<div class="col-md-8 slogan">"Платформа стимулирования продаж и маркетинговой аналитики и кешбека"</div>
+				<div class="col-md-4 nav">
 					<ul>
-						<li><a href="#">о проекте</a></li>
+						<!-- <li><a href="#">о проекте</a></li>
 						<li>
 							<a href="#">производителю<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 								<ul>
@@ -59,7 +59,7 @@
 								<li><a href="#">alkfao</a></li>
 								<li><a href="#">jdngaouregpa</a></li>
 								<li><a href="#">alodnaoirna</a></li>
-								<li id="cover"><i class="fa fa-angle-down" aria-hidden="true"></i></li>
+								<li class="cover"><i class="fa fa-angle-down" aria-hidden="true"></i></li>
 							</ul>
 						</li>
 						<li><a href="#">покупателям<i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -69,10 +69,10 @@
 								<li><a href="#">KJNisovn</a></li>
 								<li><a href="#">[OIPNVpbd</a></li>
 								<li><a href="#">pdirbpaib</a></li>
-								<li id="cover"><i class="fa fa-angle-down" aria-hidden="true"></i></li>s
+								<li class="cover"><i class="fa fa-angle-down" aria-hidden="true"></i></li>s
 							</ul>
-
-						</li>
+						
+						</li> -->
 						<li><a href="#">новости</a></li>
 						<li><a href="#">мероприятиям</a></li>
 						<li><a href="#">медиа</a></li>
@@ -101,92 +101,101 @@
 		<div class="divider"></div>
 		<div class="container">
 			<div class="left-sidebar col-md-3  col-sm-3  col-xs-3">
-				<div class="overview left-sidebar-head"><span></span>Обзор<i class="fa fa-angle-down" aria-hidden="true"></i>
-					<a href="#">показатели</a>
-					<a href="#">продажи</a>
-					<a href="#">средний чек</a>
-					<a href="#">глубина чека</a>
+				<div class="overview left-sidebar-head"><span></span> Обзор<i class="fa fa-angle-down  toggle-point" aria-hidden="true"></i>
+					<div class="wrap">
+						<a href="#">показатели</a>
+						<a href="#">продажи</a>
+						<a href="#">средний чек</a>
+						<a href="#">глубина чека</a>
+					</div>
 				</div>
-				<div class="action left-sidebar-head"><span></span>Акции<i class="fa fa-angle-down" aria-hidden="true"></i>
-					<a href="#">создать</a>
-					<a href="#">охват</a>
-					<a href="#">привлечение</a>
-					<a href="#">конверсия</a>
-					<a href="#">проникновение</a>
+				<div class="action left-sidebar-head"><span></span> Акции<i class="fa fa-angle-down   toggle-point" aria-hidden="true"></i>
+					<div class="wrap">
+						<a href="#">создать</a>
+						<a href="#">охват</a>
+						<a href="#">привлечение</a>
+						<a href="#">конверсия</a>
+						<a href="#">проникновение</a>
+					</div>
 				</div>
-				<div class="bonuses left-sidebar-head"><span></span>финансовые бонусы<i class="fa fa-angle-down" aria-hidden="true"></i>
-					<a href="#">текущие</a>
-					<a href="#">закрытые</a>
-					<a href="#">документы</a>
+				<div class="bonuses left-sidebar-head"><span></span> финансовые бонусы<i class="fa fa-angle-down  toggle-point" aria-hidden="true"></i>
+					<div class="wrap">
+						<a href="#">текущие</a>
+						<a href="#">закрытые</a>
+						<a href="#">документы</a>
+					</div>
 				</div>
-				<div class="settings left-sidebar-head"><span></span>настройки<i class="fa fa-angle-down" aria-hidden="true"></i>
-					<a href="#">кассы</a>
-					<a href="#">чеки</a>
-					<a href="#">пользователи</a>
-					<a href="#">реквизиты</a>
+				<div class="settings left-sidebar-head"><span></span> настройки<i class="fa fa-angle-down toggle-point" aria-hidden="true"></i>
+					<div class="wrap">
+						<a href="#">кассы</a>
+						<a href="#">чеки</a>
+						<a href="#">пользователи</a>
+						<a href="#">реквизиты</a>
+					</div>
 				</div>
-				<div class="support left-sidebar-head"><span></span>поддержка
+				<div class="support left-sidebar-head"><span></span> поддержка
 				</div>
 			</div>
 			<div class="content__main col-md-9  col-sm-9  col-xs-9">
-				<div class="content__main__block acion-part">
-					<div class="head">
-						<span>акция</span>
-						<button class="accord"></button>
-					</div>
-					<form action="#" id="action">
-						<div class="row">
-							<div class="col-lg-3 subhead">Название акции</div>
-							<div class="col-lg-8  forms">
-								<input type="text" name="action-name" class="action-name"><br>
-								<input type="radio" name="action-type" id='discount' value="discount"><label for="discount">Скидка</label>
-								<input type="radio" name="action-type" id="cashback" value="cashback"><label for="cashback" class="cashback">Cashback</label>
-							</div>
+				<form action="#" id="action">
+					<div class="content__main__block acion-part">
+						<div class="head toggle-point">
+							<span>акция</span>
 						</div>
-						<div class="row">
-							<div class="col-lg-3 subhead">Размер:</div>
-							<div class="col-lg-8 forms">
-								<input type="text" name="action-amount"  class="size" placeholder=" Ставка">% 
-								<input type="text" name="action-bonus" class="size" placeholder=" Бонус">рублей
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-3 subhead">Описание: 
-								<span class="subhead-description">2 000 символов</span>
-							</div>
-							<div class="col-lg-8 forms">
-								<textarea type="text" name="action-subhead-discription" maxlength="2000" class="textarea"></textarea>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-3 subhead">Описание: 
-								<span class="subhead-description">70 символов <br>для Twitter</span>
-							</div>
-							<div class="col-lg-8 forms">
-								<textarea type="text" name="action-subhead-discription-twitter" maxlength="70" class="textarea"></textarea>
-							</div>
-						</div>
-				</div>
-				<div class="content__main__block action-conditions-part">
-					<div class="head">
-						<span>условия акции</span>
-						<button class="accord"></button>
-					</div>
+						<div class="wrap">
 							<div class="row">
-								<div class="col-lg-3 subhead">период с</div>
-								<div class="col-lg-8 forms">
+								<div class="col-md-3 subhead">Название акции</div>
+								<div class="col-md-7  forms">
+									<input type="text" name="action-name" class="action-name"><br>
+									<input type="radio" name="action-type" id='discount' value="discount"><label for="discount">Скидка</label>
+									<input type="radio" name="action-type" id="cashback" value="cashback"><label for="cashback" class="cashback">Cashback</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 subhead">Размер:</div>
+								<div class="col-md-7 forms">
+									<input type="text" name="action-amount"  class="size" placeholder=" Ставка">% 
+									<input type="text" name="action-bonus" class="size" placeholder=" Бонус">рублей
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 subhead">Описание: 
+									<span class="subhead-description">2 000 символов</span>
+								</div>
+								<div class="col-md-7 forms">
+									<textarea type="text" name="action-subhead-discription" maxlength="2000" class="textarea"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 subhead">Описание: 
+									<span class="subhead-description">70 символов <br>для Twitter</span>
+								</div>
+								<div class="col-md-7 forms">
+									<textarea type="text" name="action-subhead-discription-twitter" maxlength="70" class="textarea"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content__main__block action-conditions-part">
+						<div class="head toggle-point">
+							<span>условия акции</span>
+						</div>
+						<div class="wrap">
+							<div class="row conditions-period">
+								<div class="col-md-3 subhead">Период с</div>
+								<div class="col-md-7 forms">
 									<input type="text" name="date" class="tcal" value="">
 									 по <input type="text" name="date" class="tcal" value="">
 								</div>	
-								<div class="col-lg-2">
+								<div class="col-md-2 circle-block">
 									<div class="circle"></div>
 									<div class="percent">70 %</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-lg-3 subhead">дни недели:</div>
-								<div class="col-lg-8 week">
-									<input type="checkbox" id="week"><label for="week">Вся неделя</label>
+							<div class="row week-block">
+								<div class="col-md-3 subhead">Дни недели:</div>
+								<div class="col-md-7 conditions-week">
+									<input type="checkbox" id="week"><label for="week" class="alldays">Все дни</label>
 									<input type="checkbox" id="monday"><label for="monday">Пн</label>
 									<input type="checkbox" id="tuesday"><label for="tuesday">Вт</label>
 									<input type="checkbox" id="wednsday"><label for="wednsday">Ср</label>
@@ -195,27 +204,27 @@
 									<input type="checkbox" id="saturday"><label for="saturday">Сб</label>
 									<input type="checkbox" id="sunday"><label for="sunday">Вс</label>
 								</div>	
-								<div class="col-lg-3">
+								<div class="col-md-2 circle-block">
 									<div class="circle"></div>
 									<div class="percent">50 %</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-lg-3 subhead">время с</div>
-								<div class="col-lg-8">
+							<div class="row time-block">
+								<div class="col-md-3 subhead">Время с</div>
+								<div class="col-md-7 time-block-wrapper">
 									<input type="time" name="time" class="time" value="">
 									 по <input type="time" name="time" class="time" value="">
 								</div>	
-								<div class="col-lg-2">
+								<div class="col-md-2 circle-block">
 									<div class="circle"></div>
 									<div class="percent">20 %</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-lg-3 subhead">география</div>
-								<div class="col-lg-8 geography">
+							<div class="row geography-block">
+								<div class="col-md-3 subhead">География:</div>
+								<div class="col-md-7 geography">
 									<div class="btn-group dropdown">
-										<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">+ Добавить</button>
+										<button class="btn-add" data-toggle="dropdown">+ Добавить</button>
 										<ul class="dropdown-menu">
 											<li class="dropdown-menu-item"><a href="#">Москва</a></li>
 											<li class="dropdown-menu-item"><a href="#">Санкт-Петербург</a></li>
@@ -224,26 +233,31 @@
 									</div>
 									<span>Выбрано <p class="geography-place-amount">2</p> шт</span>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-md-2 circle-block">
 									<div class="circle"></div>
 									<div class="percent">50 %</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="geography-place">
-									<span>Москва</span>
-									<button >x</button>
-								</div>
-								<div class="geography-place">
-									<span>Санкт-Петербург</span>
-									<button >x</button>
+							<div class="row city-block">
+								<div class="col-md-3"></div>
+								<div class="col-md-7">
+									<div class="shop-place">
+										<span>Москва</span>
+										<button class="delete"></button>
+									</div>
+
+									<div class="shop-place">
+										<span>Санкт-Петербург</span>
+										<button class="delete"></button>
+									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-lg-3 subhead">магазины</div>
-								<div class="col-lg-8 shop">
+							<div class="row shop-block">
+								<div class="col-md-3 subhead">Магазины:
+								</div>
+								<div class="col-md-7 shop">
 									<div class="btn-group dropdown">
-										<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">+ Добавить</span></button>
+										<button class="btn-add" data-toggle="dropdown">+ Добавить</span></button>
 										<ul class="dropdown-menu">
 											<li class="dropdown-menu-item"><a href="#">Название магазина</a></li>
 											<li class="dropdown-menu-item"><a href="#">Название магазина</a></li>
@@ -252,181 +266,204 @@
 									</div>
 									<span>Выбрано <p class="shop-amount">2</p> шт</span>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-md-2 circle-block">
 									<div class="circle"></div>
 									<div class="percent">90 %</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="shop-place">
-									<span>Название магазина</span>
-									<button >x</button>
-								</div>
-								<div class="shop-place">
-									<span>Название магазина</span>
-									<button >x</button>
+							<div class="row shop-place-block">
+								<div class="col-md-3"></div>
+								<div class="col-md-7">
+									<div class="shop-place">
+										<span>Название магазина</span>
+										<button class="delete"></button>
+									</div>
+									<div class="shop-place">
+										<span>Название магазина</span>
+										<button class="delete"></button>
+									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-lg-3 subhead">Сумма чека:</div>
-								<div class="col-lg-8">
+							<div class="row check-block">
+								<div class="col-md-3 subhead">Сумма чека:</div>
+								<div class="col-md-7 check-block-input">
 									<div class="symbol"></div>
 									<input type="text" id="check-amount" readonly placeholder=" пусто...">
 									<p> рублей</p>
 								</div>
-								<div class="col-lg-2">
+								<div class="col-md-2 circle-block">
 									<div class="circle"></div>
 									<div class="percent">20 %</div>
 								</div>
 							</div>
-							<input type="checkbox" name="action-participation" id="action-participation"><label for="action-participation">Участие в акции не более одного раза</label>					
-						
-				</div>
-				<div class="content__main__block goods-part">
-					<div class="head">
-						<span>товары</span>
-						<span>Выбрано <p class="goods-amount"></p> шт</span>
-						<div class="circle"></div>
-						<p class="percent">90 %</p>
-						<button class="accord"></button>
-					</div>
-					<div class="line">
-						<div class="number">54</div>
-						<div class="nomenclature">Вода Боржоми 0,75 (4787298756)</div>
-						<div class="amount">
-							<div class="symbol"></div>
-							<span class="amount-number">125</span>
-						</div>
-						<button class="delete"></button>
-					</div>
-					<div class="line">
-						<div class="number">654</div>
-						<div class="nomenclature">Вода Боржоми 0,75 (16546513215)</div>
-						<div class="amount">
-							<div class="symbol"></div>
-							<span class="amount-number">33</span>
-						</div>
-						<button class="delete"></button>
-					</div>
-					<div class="line">
-						<div class="number">23</div>
-						<div class="nomenclature">Вода Боржоми 0,75 (216511325)</div>
-						<div class="amount">
-							<div class="symbol"></div>
-							<span class="amount-number">75</span>
-						</div>
-						<button class="delete"></button>
-					</div>
-				</div>
-				<div class="content__main__block audience-part">
-					<div class="head">
-						<span>аудитория</span>
-						<div class="circle"></div>
-						<p class="percent">60 %</p>
-						<button class="accord"></button>
-					</div>
-					<span>выберите аудиторию которую необходимо исключить</span>
-					<div class="row">
-						<span>пол:</span>
-						<input type="radio" name="gender" value="nevermind" id="nevermind"><label for="nevermind">Не имеет значения</label>
-						<input type="radio" name="gender" value="male" id="male"><label for="male">Мужчины</label>
-						<input type="radio" name="gender" value="female" id="female"><label for="female">женщины</label>
-					</div>
-					<div class="row">
-						<div class="col-lg-2 subhead">Возраст:</div>
-						<div class="col-lg-8 age">
-							<div class="btn-group dropdown">
-								<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">+ Добавить</span></button>
-								<ul class="dropdown-menu">
-									<li class="dropdown-menu-item"><a href="#">21-25</a></li>
-									<li class="dropdown-menu-item"><a href="#">26-30</a></li>
-									<li class="dropdown-menu-item"><a href="#">31-35</a></li>
-								</ul>
+							<div class="row checkbox-action-participation">
+								<div class="col-md-3"></div>
+								<div class="col-md-7 checkbox-action-block">
+									<input type="checkbox" name="action-participation" id="action-participation">
+									<label for="action-participation">Участие в акции не более одного раза</label>	
+								</div>
 							</div>
-							<span>Выбрано <p class="shop-amount">2</p> шт</span>
 						</div>
 					</div>
-					<div class="row">
-						<div class="shop-place">
-							<span>21-25</span>
-							<button >x</button>
+					<div class="content__main__block goods-part">
+						<div class="head toggle-point">
+							<span>товары</span>
+							<div class="block-description">
+								<span>Выбрано<p class="goods-amount">2 шт.:</p> </span>
+								<div class="description-circle-block">
+									<div class="circle"></div>
+									<span class="index">90 %</span>
+								</div>
+							</div>
 						</div>
-						<div class="shop-place">
-							<span>31-35</span>
-							<button >x</button>
+						<div class="wrap">
+							<table>
+								<tr>
+									<td>54</td>
+									<td>Вода Боржоми 0,75 (4787298756)</td>
+									<td><div class="symbol"></div></td>
+									<td>125</td>
+									<td><button class="delete"></button></td>
+								</tr>
+								<tr>
+									<td>654</td>
+									<td>Вода Боржоми 0,75 (16546513215)</td>
+									<td><div class="symbol"></div></td>
+									<td>33</td>
+									<td><button class="delete"></button></td>
+								</tr>
+								<tr>
+									<td>23</td>
+									<td>Вода Боржоми 0,75 (216511325)</td>
+									<td><div class="symbol"></div></td>
+									<td>75</td>
+									<td><button class="delete"></button></td>
+								</tr>
+							</table>
 						</div>
 					</div>
-					<div class="row">
-						<span>семейное положение:</span>
-						<input type="radio" name="marital-status" value="nevermind" id="nevermind"><label for="nevermind">Не имеет значения</label>
-						<input type="radio" name="marital-status" value="married" id="married"><label for="married">В браке</label>
-						<input type="radio" name="marital-status" value="children" id="children"><label for="children">Есть дети</label>
-					</div>
-				</div>
-				<div class="summary">
-					<div class="circle-summary">
-						<span class="summary-name">оценочный суммарный объем аудитории</span>
-						<div class="circle-big"><span class="circle-big-index">70 %</span></div>
-					</div>
-					<div class="total-summary">
-						<span class="summary-name">оценочный расход средств на компанию</span>
-						<div class="circle-big">
-							<i></i>
-							<span class="total-summary-amount">20 000</span>
-							<p>руб./мес.</p>
+					<div class="content__main__block audience-part">
+						<div class="head toggle-point">
+							<span>товары</span>
+							<div class="block-description">
+								<div class="description-circle-block">
+									<div class="circle"></div>
+									<span class="index">60 %</span>
+								</div>
+							</div>
+						</div>
+						<div class="wrap">
+							<span>Выберите аудиторию которую необходимо исключить</span>
+							<div class="row">
+								<div class="col-md-3 gender-name">Пол:</div>
+								<div class="col-md-7 gender-content">
+									<input type="radio" name="gender" value="nevermind" id="nevermind"><label for="nevermind">Не имеет значения</label>
+									<input type="radio" name="gender" value="male" id="male"><label for="male">Мужчины</label>
+									<input type="radio" name="gender" value="female" id="female"><label for="female">Женщины</label>
+								</div>
+							</div>
+							<div class="row age-add">
+								<div class="col-lg-3 subhead">Возраст:</div>
+								<div class="col-lg-7 age">
+									<div class="btn-group dropdown">
+										<button class="btn-add" data-toggle="dropdown">+  Добавить</span></button>
+										<ul class="dropdown-menu">
+											<li class="dropdown-menu-item"><a href="#">21-25</a></li>
+											<li class="dropdown-menu-item"><a href="#">26-30</a></li>
+											<li class="dropdown-menu-item"><a href="#">31-35</a></li>
+										</ul>
+									</div>
+									<span>Выбрано <p class="shop-amount">2</p> шт.:</span>
+								</div>
+							</div>
+							<div class="row age-block">
+								<div class="col-md-3"></div>
+								<div class="col-md-7">
+									<div class="shop-place">
+										<span>21-25</span>
+										<button class="delete"></button>
+									</div>
+									<div class="shop-place">
+										<span>31-35</span>
+										<button class="delete"></button>
+									</div>
+								</div>
+							</div>
+							<div class="row marital-status">
+								<div class="col-md-3 subhead">Cемейное положение:</div>
+								<div class="col-md-7 marital">
+									<input type="radio" name="marital-status" value="nevermind" id="nevermind-marital"><label for="nevermind-marital">Не имеет значения</label>
+									<input type="radio" name="marital-status" value="married" id="married"><label for="married">В браке</label>
+									<input type="radio" name="marital-status" value="children" id="children"><label for="children">Есть дети</label>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<input type="submit" class="submit-launch"><label for="submit-launch">Сохранить и запустить</label>
-					<input type="submit" class="submit"><label for="submit">Сохранить</label>
-					<input type="reset" class="reset"><label for="reset">Отмена</label>
-				</div>
-			</form>
-			</div>
+					<div class="summary">
+						<div class="circle-summary">
+							<span class="summary-name">оценочный суммарный объем аудитории</span>
+							<div class="circle-big"><span class="circle-big-index">70 %</span></div>
+						</div>
+						<div class="total-summary">
+							<span class="summary-name">оценочный расход средств на компанию</span>
+							<div class="circle-big">
+								<i></i>
+								<span class="total-summary-amount">20 000</span>
+								<p>руб./мес.</p>
+							</div>
+						</div>
+						<div class="summary-background"></div>
+					</div>
+					<div class="row submit-block">
+						<input type="submit" id="submit-launch"><label for="submit-launch" class="submit-launch">Сохранить и запустить</label>
+						<input type="submit" id="submit"><label for="submit" class="submit">Сохранить</label>
+						<input type="reset" id="reset"><label for="reset" class="reset">Отмена</label>
+					</div>
+				</form>
+			</div>	
 		</div>
 	</section>
 	<footer>
 		<div class="container">
 			<div class="col-lg-3 footer-block">
 				<div class="footer-block-name">общее</div>
-				<div class="footer-item"><a href="#">о компании</a></div>
-				<div class="footer-item"><a href="#">новости</a></div>
-				<div class="footer-item"><a href="#">техническая поддержка</a></div>
-				<div class="footer-item"><a href="#">партнерская программа</a></div>
-				<div class="footer-item"><a href="#">блог</a></div>
-				<div class="footer-item"><a href="#">СМИ о нас</a></div>
-				<div class="footer-item"><a href="#">партнеры</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>О компании</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Новости</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Техническая поддержка</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Партнерская программа</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Блог</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>СМИ о нас</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Партнеры</a></div>
 			</div>
 			<div class="col-lg-3 footer-block">
 				<div class="footer-block-name">продукты</div>
-				<div class="footer-item"><a href="#">стимулирующие выплаты</a></div>
-				<div class="footer-item"><a href="#">CRM</a></div>
-				<div class="footer-item"><a href="#">мобильное приложение "Я купил"</a></div>
-				<div class="footer-item"><a href="#">приложение для касс "Эвотор"</a></div>
-				<div class="footer-item"><a href="#">API</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Стимулирующие выплаты</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>CRM</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Мобильное приложение "Я купил"</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Приложение для касс "Эвотор"</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>API</a></div>
 			</div>
 			<div class="col-lg-3 footer-block">
 				<div class="footer-block-name">сегменты</div>
-				<div class="footer-item"><a href="#">производители</a></div>
-				<div class="footer-item"><a href="#">розничные сети</a></div>
-				<div class="footer-item"><a href="#">покупатели</a></div>
-				<div class="footer-item"><a href="#">торговые центры</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Производители</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Розничные сети</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Покупатели</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Торговые центры</a></div>
 			</div>
 			<div class="col-lg-3 footer-block">
 				<div class="footer-block-name">условия</div>
-				<div class="footer-item"><a href="#">политика конфиденциальности</a></div>
-				<div class="footer-item"><a href="#">платежная информация</a></div>
-				<div class="footer-item"><a href="#">лицензионное соглашение</a></div>
-				<div class="footer-item"><a href="#">политика в отношении персональных данных</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Политика конфиденциальности</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Платежная информация</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Лицензионное соглашение</a></div>
+				<div class="footer-item"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Политика в отношении персональных данных</a></div>
 			</div>
+
 		</div>
 		<div class="copyright">&copy Wellmark 2017. Все права защищеныю.</div>
 	</footer>
 
 
 <script src="js/tcal.js"></script>
-<script src="js/timepicker-ui.min.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
