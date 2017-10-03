@@ -2,7 +2,7 @@
 
 /* input box in default state */ 
 .tcalInput {
-	background: url('../img/calendar-icon.png') 100% 50% no-repeat;
+	background: url('../img/calendar-icon.png') 95% 50% no-repeat;
 	padding-right: 20px;
 	cursor: pointer;
 }
@@ -16,7 +16,7 @@
 	position: absolute;
 	visibility: hidden;
 	z-index: 100;
-	width: 200px;
+	width: 150px;
 	background-color: white;
 	margin-top: 2px;
 	padding: 0 2px 2px 2px;
@@ -90,3 +90,9 @@
 #tcalGrid td.tcalWeekend { background-color: #ACD6F5; }
 #tcalGrid td.tcalToday { border: 1px solid red; }
 #tcalGrid td.tcalSelected { background-color: #FFB3BE; }		
+
+@media all and (max-width: 750px) {
+	#tcal {
+		width: 150px;
+	}
+}

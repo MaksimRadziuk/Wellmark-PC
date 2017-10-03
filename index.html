@@ -90,7 +90,7 @@
 				</div>
 				<div class="row">
 					<div class="page-name">личный кабинет</div>
-					<div class="company-name">ООО "Самая лучшая"</div>
+					<div class="company-name">ООО "BestofthebesT"</div>
 					<div class="balance">
 						<div class="balance__text">Баланс:</div>
 						<div class="balance__count">100 000 $</div>
@@ -100,17 +100,17 @@
 		</div>
 		<div class="divider"></div>
 		<div class="container">
-			<div class="left-sidebar col-md-3  col-sm-3  col-xs-3">
-				<div class="overview left-sidebar-head"><span></span> Обзор<i class="fa fa-angle-down  toggle-point" aria-hidden="true"></i>
-					<div class="wrap">
+			<div class="left-sidebar col-md-3  col-sm-12  col-xs-12">
+				<div class="overview left-sidebar-head"><p></p><span>Обзор</span><i class="fa fa-angle-down toggle1-point" aria-hidden="true"></i>
+					<div class="wrap1">
 						<a href="#">показатели</a>
 						<a href="#">продажи</a>
 						<a href="#">средний чек</a>
 						<a href="#">глубина чека</a>
 					</div>
 				</div>
-				<div class="action left-sidebar-head"><span></span> Акции<i class="fa fa-angle-down   toggle-point" aria-hidden="true"></i>
-					<div class="wrap">
+				<div class="action left-sidebar-head"><p></p><span>Акции</span><i class="fa fa-angle-down toggle1-point" aria-hidden="true"></i>
+					<div class="wrap1">
 						<a href="#">создать</a>
 						<a href="#">охват</a>
 						<a href="#">привлечение</a>
@@ -118,59 +118,60 @@
 						<a href="#">проникновение</a>
 					</div>
 				</div>
-				<div class="bonuses left-sidebar-head"><span></span> финансовые бонусы<i class="fa fa-angle-down  toggle-point" aria-hidden="true"></i>
-					<div class="wrap">
+				<div class="bonuses left-sidebar-head"><p></p><span>финансовые бонусы</span><i class="fa fa-angle-down  toggle1-point" aria-hidden="true"></i>
+					<div class="wrap1">
 						<a href="#">текущие</a>
 						<a href="#">закрытые</a>
 						<a href="#">документы</a>
 					</div>
 				</div>
-				<div class="settings left-sidebar-head"><span></span> настройки<i class="fa fa-angle-down toggle-point" aria-hidden="true"></i>
-					<div class="wrap">
+				<div class="settings left-sidebar-head"><p></p><span>настройки</span><i class="fa fa-angle-down toggle1-point" aria-hidden="true"></i>
+					<div class="wrap1">
 						<a href="#">кассы</a>
 						<a href="#">чеки</a>
 						<a href="#">пользователи</a>
 						<a href="#">реквизиты</a>
 					</div>
 				</div>
-				<div class="support left-sidebar-head"><span></span> поддержка
+				<div class="support left-sidebar-head"><p></p><span>поддержка</span>
 				</div>
 			</div>
-			<div class="content__main col-md-9  col-sm-9  col-xs-9">
+			<div class="content__main col-md-9  col-sm-12  col-xs-12">
 				<form action="#" id="action">
 					<div class="content__main__block acion-part">
 						<div class="head toggle-point">
 							<span>акция</span>
+							<span class="action-right-block"></span>
 						</div>
 						<div class="wrap">
 							<div class="row">
-								<div class="col-md-3 subhead">Название акции</div>
-								<div class="col-md-7  forms">
+								<div class="col-md-3 col-sm-3 col-xs-3 subhead">Название акции</div>
+								<div class="col-md-7 col-sm-7 col-xs-9 forms">
 									<input type="text" name="action-name" class="action-name"><br>
 									<input type="radio" name="action-type" id='discount' value="discount"><label for="discount">Скидка</label>
 									<input type="radio" name="action-type" id="cashback" value="cashback"><label for="cashback" class="cashback">Cashback</label>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-3 subhead">Размер:</div>
-								<div class="col-md-7 forms">
+								<div class="col-md-3 col-sm-3 col-xs-3 subhead">Размер:</div>
+								<div class="col-md-7 col-sm-7 col-xs-9 forms">
 									<input type="text" name="action-amount"  class="size" placeholder=" Ставка">% 
 									<input type="text" name="action-bonus" class="size" placeholder=" Бонус">рублей
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-3 subhead">Описание: 
+								<div class="col-md-3 col-sm-3 col-xs-3 subhead">Описание: 
 									<span class="subhead-description">2 000 символов</span>
 								</div>
-								<div class="col-md-7 forms">
+								<div class="col-md-7 col-sm-7 col-xs-9 forms">
 									<textarea type="text" name="action-subhead-discription" maxlength="2000" class="textarea"></textarea>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-3 subhead">Описание: 
+								<div class="col-md-3 col-sm-3 col-xs-3 subhead">Описание: 
 									<span class="subhead-description">70 символов <br>для Twitter</span>
 								</div>
-								<div class="col-md-7 forms">
+								<div class="col-md-7 col-sm-7 col-xs-9 forms">
 									<textarea type="text" name="action-subhead-discription-twitter" maxlength="70" class="textarea"></textarea>
 								</div>
 							</div>
@@ -179,22 +180,23 @@
 					<div class="content__main__block action-conditions-part">
 						<div class="head toggle-point">
 							<span>условия акции</span>
+							<span class="action-right-block toggle2-point"></span>
 						</div>
 						<div class="wrap">
 							<div class="row conditions-period">
-								<div class="col-md-3 subhead">Период с</div>
-								<div class="col-md-7 forms">
+								<div class="col-md-3 col-sm-3 col-xs-2 subhead">Период с</div>
+								<div class="col-md-7 col-sm-7 col-xs-8 forms">
 									<input type="text" name="date" class="tcal" value="">
 									 по <input type="text" name="date" class="tcal" value="">
 								</div>	
-								<div class="col-md-2 circle-block">
+								<div class="col-md-2 col-sm-2 col-xs-2 circle-block">
 									<div class="circle"></div>
 									<div class="percent">70 %</div>
 								</div>
 							</div>
 							<div class="row week-block">
-								<div class="col-md-3 subhead">Дни недели:</div>
-								<div class="col-md-7 conditions-week">
+								<div class="col-md-3 col-sm-3 col-xs-2 subhead">Дни недели:</div>
+								<div class="col-md-7 col-sm-7 col-xs-8 conditions-week">
 									<input type="checkbox" id="week"><label for="week" class="alldays">Все дни</label>
 									<input type="checkbox" id="monday"><label for="monday">Пн</label>
 									<input type="checkbox" id="tuesday"><label for="tuesday">Вт</label>
@@ -210,8 +212,8 @@
 								</div>
 							</div>
 							<div class="row time-block">
-								<div class="col-md-3 subhead">Время с</div>
-								<div class="col-md-7 time-block-wrapper">
+								<div class="col-md-3 col-sm-3 col-xs-2 subhead">Время с</div>
+								<div class="col-md-7 col-sm-7 col-xs-8 time-block-wrapper">
 									<input type="time" name="time" class="time" value="">
 									 по <input type="time" name="time" class="time" value="">
 								</div>	
@@ -221,14 +223,14 @@
 								</div>
 							</div>
 							<div class="row geography-block">
-								<div class="col-md-3 subhead">География:</div>
-								<div class="col-md-7 geography">
+								<div class="col-md-3 col-sm-3 col-xs-2 subhead">География:</div>
+								<div class="col-md-7 col-sm-7 col-xs-8 geography">
 									<div class="btn-group dropdown">
 										<button class="btn-add" data-toggle="dropdown">+ Добавить</button>
 										<ul class="dropdown-menu">
-											<li class="dropdown-menu-item"><a href="#">Москва</a></li>
-											<li class="dropdown-menu-item"><a href="#">Санкт-Петербург</a></li>
-											<li class="dropdown-menu-item"><a href="#">Новосибирск</a></li>
+											<li class="dropdown-menu-item"><p onclick="myFunc ()">Москва</p></li>
+											<li class="dropdown-menu-item"><p onclick="myFunc1 ()">Санкт-Петербург</p></li>
+											<li class="dropdown-menu-item"><p onclick="myFunc2 ()">Новосибирск</p></li>
 										</ul>
 									</div>
 									<span>Выбрано <p class="geography-place-amount">2</p> шт</span>
@@ -239,29 +241,32 @@
 								</div>
 							</div>
 							<div class="row city-block">
-								<div class="col-md-3"></div>
-								<div class="col-md-7">
-									<div class="shop-place">
+								<div class="col-md-3 col-sm-3 col-xs-2"></div>
+								<div class="col-md-7 col-sm-7 col-xs-8">
+									<div class="shop-place col-md-4 col-md-4 col-sm-4 col-xs-4" id="moscow">
 										<span>Москва</span>
-										<button class="delete"></button>
+										<div class="delete"></div>
 									</div>
 
-									<div class="shop-place">
+									<div class="shop-place col-md-4 col-sm-4 col-xs-4" id="SpB">
 										<span>Санкт-Петербург</span>
-										<button class="delete"></button>
+										<div class="delete"></div>
+									</div>
+									<div class="shop-place col-md-4 col-md-4 col-sm-4 col-xs-4" id='Novo'>
+										<span>Новосибирск</span>
+										<div class="delete"></div>
 									</div>
 								</div>
 							</div>
 							<div class="row shop-block">
-								<div class="col-md-3 subhead">Магазины:
+								<div class="col-md-3 col-sm-3 col-xs-2 subhead">Магазины:
 								</div>
-								<div class="col-md-7 shop">
+								<div class="col-md-7 col-sm-7 col-xs-8 shop">
 									<div class="btn-group dropdown">
 										<button class="btn-add" data-toggle="dropdown">+ Добавить</span></button>
 										<ul class="dropdown-menu">
-											<li class="dropdown-menu-item"><a href="#">Название магазина</a></li>
-											<li class="dropdown-menu-item"><a href="#">Название магазина</a></li>
-											<li class="dropdown-menu-item"><a href="#">Название магазина</a></li>
+											<li class="dropdown-menu-item"><p onclick='myShop1 ()'>Название магазина</p></li>
+											<li class="dropdown-menu-item"><p onclick='myShop2 ()'>Название магазина</p></li>
 										</ul>
 									</div>
 									<span>Выбрано <p class="shop-amount">2</p> шт</span>
@@ -272,21 +277,21 @@
 								</div>
 							</div>
 							<div class="row shop-place-block">
-								<div class="col-md-3"></div>
-								<div class="col-md-7">
-									<div class="shop-place">
+								<div class="col-md-3 col-sm-3 col-xs-2"></div>
+								<div class="col-md-7 col-sm-7 col-xs-8">
+									<div class="shop-place col-md-5" id='shop1'>
 										<span>Название магазина</span>
-										<button class="delete"></button>
+										<div class="delete"></div>
 									</div>
-									<div class="shop-place">
+									<div class="shop-place col-md-5" id='shop2'>
 										<span>Название магазина</span>
-										<button class="delete"></button>
+										<div class="delete"></div>
 									</div>
 								</div>
 							</div>
 							<div class="row check-block">
-								<div class="col-md-3 subhead">Сумма чека:</div>
-								<div class="col-md-7 check-block-input">
+								<div class="col-md-3 col-sm-3 col-xs-2 subhead">Сумма чека:</div>
+								<div class="col-md-7 col-sm-7 col-xs-8 check-block-input">
 									<div class="symbol"></div>
 									<input type="text" id="check-amount" readonly placeholder=" пусто...">
 									<p> рублей</p>
@@ -297,7 +302,7 @@
 								</div>
 							</div>
 							<div class="row checkbox-action-participation">
-								<div class="col-md-3"></div>
+								<div class="col-md-2"></div>
 								<div class="col-md-7 checkbox-action-block">
 									<input type="checkbox" name="action-participation" id="action-participation">
 									<label for="action-participation">Участие в акции не более одного раза</label>	
@@ -315,83 +320,90 @@
 									<span class="index">90 %</span>
 								</div>
 							</div>
+							<span class="action-right-block"></span>
 						</div>
+
 						<div class="wrap">
 							<table>
-								<tr>
+								<tr class="table-row">
 									<td>54</td>
 									<td>Вода Боржоми 0,75 (4787298756)</td>
 									<td><div class="symbol"></div></td>
 									<td>125</td>
-									<td><button class="delete"></button></td>
+									<td><div class="delete"></div></td>
 								</tr>
-								<tr>
+								<tr class="table-row">
 									<td>654</td>
 									<td>Вода Боржоми 0,75 (16546513215)</td>
 									<td><div class="symbol"></div></td>
 									<td>33</td>
-									<td><button class="delete"></button></td>
+									<td><div class="delete"></div></td>
 								</tr>
-								<tr>
+								<tr class="table-row">
 									<td>23</td>
 									<td>Вода Боржоми 0,75 (216511325)</td>
 									<td><div class="symbol"></div></td>
 									<td>75</td>
-									<td><button class="delete"></button></td>
+									<td><div class="delete"></div></td>
 								</tr>
 							</table>
 						</div>
 					</div>
 					<div class="content__main__block audience-part">
 						<div class="head toggle-point">
-							<span>товары</span>
+							<span>аудитория</span>
 							<div class="block-description">
 								<div class="description-circle-block">
 									<div class="circle"></div>
 									<span class="index">60 %</span>
 								</div>
 							</div>
+							<span class="action-right-block"></span>
 						</div>
 						<div class="wrap">
 							<span>Выберите аудиторию которую необходимо исключить</span>
 							<div class="row">
-								<div class="col-md-3 gender-name">Пол:</div>
-								<div class="col-md-7 gender-content">
+								<div class="col-md-3 col-sm-3 col-xs-3 gender-name">Пол:</div>
+								<div class="col-md-7 col-sm-7 col-xs-9 gender-content">
 									<input type="radio" name="gender" value="nevermind" id="nevermind"><label for="nevermind">Не имеет значения</label>
 									<input type="radio" name="gender" value="male" id="male"><label for="male">Мужчины</label>
 									<input type="radio" name="gender" value="female" id="female"><label for="female">Женщины</label>
 								</div>
 							</div>
 							<div class="row age-add">
-								<div class="col-lg-3 subhead">Возраст:</div>
-								<div class="col-lg-7 age">
+								<div class="col-md-3 col-sm-3 col-xs-3 subhead">Возраст:</div>
+								<div class="col-md-7 col-sm-7 col-xs-9 age">
 									<div class="btn-group dropdown">
 										<button class="btn-add" data-toggle="dropdown">+  Добавить</span></button>
 										<ul class="dropdown-menu">
-											<li class="dropdown-menu-item"><a href="#">21-25</a></li>
-											<li class="dropdown-menu-item"><a href="#">26-30</a></li>
-											<li class="dropdown-menu-item"><a href="#">31-35</a></li>
+											<li class="dropdown-menu-item"><p onclick='myAge1()'>21-25</p></li>
+											<li class="dropdown-menu-item"><p onclick='myAge2()'>26-30</p></li>
+											<li class="dropdown-menu-item"><p onclick='myAge3()'>31-35</p></li>
 										</ul>
 									</div>
 									<span>Выбрано <p class="shop-amount">2</p> шт.:</span>
 								</div>
 							</div>
 							<div class="row age-block">
-								<div class="col-md-3"></div>
-								<div class="col-md-7">
-									<div class="shop-place">
+								<div class="col-md-3 col-sm-3 col-xs-3"></div>
+								<div class="col-md-7 col-sm-7 col-xs-9">
+									<div class="shop-place col-md-3 col-sm-3 col-xs-3" id='over21'>
 										<span>21-25</span>
-										<button class="delete"></button>
+										<div class="delete"></div>
 									</div>
-									<div class="shop-place">
+									<div class="shop-place col-md-3 col-sm-3 col-xs-3" id='over26'>
+										<span>26-30</span>
+										<div class="delete"></div>
+									</div>
+									<div class="shop-place col-md-3 col-sm-3 col-xs-3" id='over31'>
 										<span>31-35</span>
-										<button class="delete"></button>
+										<div class="delete"></div>
 									</div>
 								</div>
 							</div>
 							<div class="row marital-status">
-								<div class="col-md-3 subhead">Cемейное положение:</div>
-								<div class="col-md-7 marital">
+								<div class="col-md-3 col-sm-3 col-xs-3 subhead">Cемейное положение:</div>
+								<div class="col-md-7 col-sm-7 col-xs-9 marital">
 									<input type="radio" name="marital-status" value="nevermind" id="nevermind-marital"><label for="nevermind-marital">Не имеет значения</label>
 									<input type="radio" name="marital-status" value="married" id="married"><label for="married">В браке</label>
 									<input type="radio" name="marital-status" value="children" id="children"><label for="children">Есть дети</label>
@@ -406,7 +418,7 @@
 						</div>
 						<div class="total-summary">
 							<span class="summary-name">оценочный расход средств на компанию</span>
-							<div class="circle-big">
+							<div class="circle-big2">
 								<i></i>
 								<span class="total-summary-amount">20 000</span>
 								<p>руб./мес.</p>
@@ -467,5 +479,7 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+
+
 </body>
 </html>
