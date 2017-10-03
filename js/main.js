@@ -76,4 +76,14 @@ $('.delete').on('click', function() {
 
 
 
+// выведение меню навигации (при разрешении 360)
+var sl = document.getElementsByClassName("toggle-btn");
+var i;
+
+for (i = 0; i < sl.length; i++) {
+    sl[i].onclick = function() {
+        this.classList.toggle("toggle-btn");
+        this.lastElementChild.classList.toggle("show");
+    }
+}
 
