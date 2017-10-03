@@ -277,10 +277,12 @@ header .nav ul li>ul li:hover {
 .content-header>.container>.row {
 	margin-top: 20px;
 	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 
 .page-name {
-	display: inline-block;
 	text-align: center;
 	width: 200px;
 	font-family: Geometria, sans-serif;
@@ -291,16 +293,9 @@ header .nav ul li>ul li:hover {
 }
 
 .company-name {
-	display: inline-block;
 	font-family: Geometria, sans-serif;
 	font-size: 18px;
 	line-height:60px;
-	margin-left: 25%;
-}
-
-.balance {
-	display: inline-block;
-	float: right;
 }
 
 .balance__text {
@@ -558,7 +553,7 @@ header .nav ul li>ul li:hover {
 		/*=========*/
 /*========= ACTION =======*/
 		/*=========*/
-#action .subhead {
+.subhead {
 	font-family: Geometria, sans-serif;
 	font-size: 16px;
 	text-align: right;
@@ -652,11 +647,6 @@ header .nav ul li>ul li:hover {
 	display: none;
 }
 
-#action .subhead {
-	font-family: Geometria, sans-serif;
-	font-size: 16px;
-	text-align: right;
-}
 /*----------- END ACTION ---------*/
 
 
@@ -1308,15 +1298,17 @@ tr:first-child>td {
 	font-weight: 700;
 	margin-top: -13px;
 }
-.summary-background {
+.summary {
 	height: 420px;
+	width: 100%;
 	background-color: #f4f4f4;
-	position: absolute;
-	width: 200vw;
-	top: 0;
-	left: -50vw;
-	z-index: 0;
 }
+.summary-block {
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+}
+
 /*----------- END SUMMARY ---------*/
 
 		/*=========*/
@@ -1326,9 +1318,9 @@ tr:first-child>td {
 .submit-block {
 	height: 210px;
 	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items:center;
+}
+.submit-block>.container>.summary-block {
+	height: 210px;
 }
 .submit-block input {
 	display: none;
@@ -1380,7 +1372,7 @@ tr:first-child>td {
 footer {
 	width: 100%;
 	background-color: #2f2d32;
-	height: 345px;
+	min-height: 345px;
 }
 footer .container {
 	width: 90%;
@@ -1490,6 +1482,9 @@ footer .copyright {
 	.age>span {
 		font-size: 12px;
 	}
+	.gender-name {
+		font-size: 14px;
+	}
 	.gender-content>label {
 		font-size: 12px;
 	}
@@ -1523,6 +1518,7 @@ footer .copyright {
 		display: block;
 		width: 100%;
 		margin: 0 auto;
+		padding: 0 10px;
 	}
 	.left-sidebar {
 		display: flex;
@@ -1545,6 +1541,11 @@ footer .copyright {
 	.content__main__block {
 		display: flex;
 		flex-direction: column;
+		padding-left: 0;
+		padding-top: 5px;
+	}
+	.content__main {
+		padding-left: 0;
 	}
 }
 @media all and (max-width: 864px){
@@ -1567,6 +1568,15 @@ footer .copyright {
 	#tcal {
 		width: 150px;
 	}
+	.phone-number {
+		display: none;
+	}
+	.greetings-wrap {
+		display: none;
+	}
+	header .phone {
+		width: 100px;
+	}
 }
 @media all and (max-width: 662px) {
 	.submit-block label.submit-launch {
@@ -1576,5 +1586,209 @@ footer .copyright {
 		display: none;
 	}
 }
-
-
+@media all and (max-width: 640px) {
+	footer>.container {
+		display: none;
+	}
+	footer>.copyright {
+		padding: 10px 20px;
+		width: 100%;
+		text-align: left;
+	}
+	.submit-block {
+		height: 100px;
+	}
+	.submit-block>.container {
+		height:inherit;
+	}
+	.submit-block>.container>.summary-block {
+		height: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.summary {
+		height: 320px;
+	}
+	.total-summary, .circle-summary {
+		height: 120px;
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+	}
+	.circle-big, .circle-big2 {
+		margin-top: 20px;
+	}
+	.summary-name {
+		margin-top: 30px;
+		line-height: 20px;
+	}
+	.circle-block {
+		display: none;
+	}
+	.marital-status {
+		margin-bottom: 20px;
+	}
+	.age-add {
+		margin-bottom: 10px;
+	}
+	.age-block {
+		margin-bottom: 10px;
+	}
+	.audience-part>.wrap>span {
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+	.page-name {
+		border: none;
+	}
+	header .phone {
+		width: 50px;
+	}
+	.content-header>.container>.row {
+		display: block;
+	}
+	.balance {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.company-name {
+		display: none;
+	}
+	.page-name {
+		line-height: 20px;
+		margin-top: 40px;
+	}
+	.balance__text, .balance__count {
+		line-height: 15px;
+	}
+	.subhead {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.action-conditions-part .forms {
+		justify-content: space-around;
+	}
+	.time-block-wrapper {
+		justify-content: space-around;
+	}
+	.action-conditions-part .conditions-period {
+		margin-bottom: 20px;
+	}
+	.week-block {
+		margin-bottom: 20px;
+	}
+	.time-block {
+		margin-bottom: 20px;
+	}
+	.geography {
+		margin-bottom: 10px;
+	}
+	.shop-block {
+		margin-bottom: 10px;
+	}
+	.shop-place-block {
+		margin-bottom: 20px;
+	}
+	.checkbox-action-block>label {
+		display: block;
+		margin-left: 10%;
+	}
+	#action .forms label {
+		margin-bottom: 20px;
+		margin-left: 10%;
+	}
+	#action .forms .size {
+		margin-bottom: 20px;
+	}
+	.subhead-description>br {
+		display: none;
+	}
+	#action .forms .textarea {
+		width: 95%;
+	}
+	.action-conditions-part .forms>input[name="date"] {
+		display: block;
+		width: 100%;
+	}
+	.submit-block label {
+		width: 100px;
+	}
+}
+@media all and (max-width: 360px) {
+	.btn-add {
+		width: 100px;
+	}
+	.description-circle-block {
+		display: none;
+	}
+	.check-block-input>.symbol {
+		display: none;
+	}
+	.check-block {
+		margin-bottom: 10px;
+	}
+	.gender-content {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.gender-content>label {
+		margin-bottom: 10px;
+		padding-bottom: 0;
+	}
+	.gender-content>label:last-child {
+		margin-bottom: 30px;
+	}
+	.marital {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.marital>label {
+		margin-bottom: 10px;
+		padding-bottom: 0;
+	}
+	.marital>label:last-child {
+		margin-bottom: 30px;
+	}
+	.circle-big{
+		width: 123px;
+		height: 123px;
+	}
+	.circle-big:after{
+		content: "";
+		top: -3px;
+		left: 0px;
+		height: 104%;
+		width: 102%;
+		background-size:100% 101%;
+	}
+	.circle-big2{
+		width: 123px;
+		height: 123px;
+		border-radius: 50%;
+	}
+	.circle-big-index {
+		font-size: 28px;
+		width: 70px;
+		height: 70px;
+		line-height: 120px;
+	}
+	.total-summary-amount {
+		font-size: 28px;
+		width: 123px;
+		height: 30px;
+		line-height: 30px;
+		margin-top: 10px;
+	}
+	.total-summary>.circle-big2>p {
+		font-size: 14px;
+		margin-top: 1px;
+	}
+	.total-summary>.circle-big2>i {
+		width: 20px;
+		height: 25px;
+		margin-top: 10px;
+	}
+	
+}
