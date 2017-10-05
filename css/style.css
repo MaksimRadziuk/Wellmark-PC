@@ -629,13 +629,13 @@ header .nav ul li>ul li:hover {
 	height: 30px;
 	margin-bottom: 15px;
 }
-#action .forms>.tcal {
+/* #action .forms>.tcal {
 	height: 35px;
 	border: 1px solid #eaeaea;
 	border-radius: 2px;
 	box-shadow: none;
 
-}
+} */
 #action .forms input[type='radio'] {
 	display: none;
 }
@@ -772,6 +772,31 @@ header .nav ul li>ul li:hover {
 }
 .dropdown-menu-item:hover {
 	background-color: #eee;
+}
+.conditions-period {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -3px;
+}
+.conditions-period>input {
+	
+}
+input[type="date"] {
+	background-image: url(../img/calendar-icon.png);
+	background-size: 10%;
+	background-position: 93% 50%;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 30px;
+	outline: none;
+	border:1px solid #eaeaea;
+}
+input[type="date"]:focus {
+	background-image: none;
+}
+input[type="date"]:hover {
+	background-image: none;
 }
 .week-block {
 	margin-bottom: 40px;
@@ -1619,12 +1644,18 @@ footer .copyright {
 }
 @media all and (max-width: 864px){
 	
-	
 	.company-name {
 		margin-left: 5%;
 	}
+}
 
 @media all and (max-width: 750px){
+	.conditions-period {
+		display: block;
+	}
+	input[type="date"] {
+		width: 150px;
+	}
 	.time-block-wrapper>input {
 		width: 150px;
 	}
@@ -1633,9 +1664,6 @@ footer .copyright {
 	}
 	footer {
 		height: auto;
-	}
-	#tcal {
-		width: 150px;
 	}
 	.phone-number {
 		display: none;
@@ -1647,6 +1675,7 @@ footer .copyright {
 		width: 100px;
 	}
 }
+
 @media all and (max-width: 662px) {
 	.submit-block label.submit-launch {
 		line-height: 17px;
@@ -1655,6 +1684,7 @@ footer .copyright {
 		display: none;
 	}
 }
+
 @media all and (max-width: 640px) {
 	footer>.container {
 		display: none;
