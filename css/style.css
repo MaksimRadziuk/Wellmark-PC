@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Geometria', sans-serif;
-	width: 100vw;
+	width: 100%;
 	overflow-x:hidden;
 }
 
@@ -24,6 +24,7 @@ input:-ms-input-placeholder      {color: #aeaeae}
 input{
 	border: 1px solid #eaeaea;
 	outline: none;
+	padding-left: 10px;
 }
 		/*=========*/
 /*========= TOPBAR =======*/
@@ -686,6 +687,7 @@ header .nav ul li>ul li:hover {
 	outline: none;
 	margin-bottom: 20px;
 	border:1px solid #eaeaea;
+	padding: 5px 10px;
 }
 #action .forms .textarea::-webkit-scrollbar-button {
 	display: none;
@@ -984,7 +986,7 @@ input[type="time"]:hover {
 }
 .block-description {
 	height: 45px;
-	width: 255px;
+	width: 275px;
 	color: #fff;
 	font-size: 16px;
 	font-family: Geometria, sans-serif;
@@ -1649,6 +1651,32 @@ footer .copyright {
 	}
 }
 
+@media all and (max-width: 767px){
+	#action .action-part .subhead,
+	.action-conditions-part .subhead,
+	.age-add .subhead {
+		text-align: left;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.conditions-period {
+		display: block;
+	}
+	.conditions-period .forms {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.conditions-week, 
+	.time-block-wrapper {
+		justify-content: space-around;
+	}
+	.checkbox-action-participation {
+		text-align: center;
+	}
+}
+
+
 @media all and (max-width: 750px){
 	.conditions-period {
 		display: block;
@@ -1686,6 +1714,9 @@ footer .copyright {
 }
 
 @media all and (max-width: 640px) {
+	footer {
+		min-height: 40px;
+		}
 	footer>.container {
 		display: none;
 	}
@@ -1815,9 +1846,10 @@ footer .copyright {
 		width: 100px;
 	}
 }
-@media all and (max-width: 360px) {
+
+@media all and (max-width: 500px) {
 	header .container-fluid {
-		display: none;
+			display: none;
 	}
 	.divider1 {
 		display: block;
@@ -1827,6 +1859,15 @@ footer .copyright {
 	}
 	.btn-dropdown640 {
 		display: block;
+	}
+}
+
+@media all and (max-width: 360px) {
+	.col-xs-10 {
+		width: 100%;
+	}
+	.col-xs-4 {
+		width: 100%;
 	}
 	.content__main__block {
 		margin-top: 40px;
